@@ -4,6 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/Portfollio-Website/',
+
   server: {
     port: 5173,
     proxy: {
