@@ -6,7 +6,7 @@ import profilePhoto from '../assets/profile-photo.jpg';
 export default function Hero({ profile, onOpenTerminal, showToast }) {
   const [typedRole, setTypedRole] = useState('');
   const roles = [
-    'Senior Full-Stack Engineer',
+    'Full-Stack Engineer',
     'Web developer & Cloud Solutions Specialist',
     'Android & iOS App Developer',
     'UI/UX Design Systems Creator'
