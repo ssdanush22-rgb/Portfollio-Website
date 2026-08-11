@@ -97,7 +97,7 @@ export default function Hero({ profile, onOpenTerminal, showToast }) {
               <a href={profile?.socials?.linkedin || "https://linkedin.com"} target="_blank" rel="noreferrer" className="social-btn" title="LinkedIn">
                 <LinkedinIcon size={18} />
               </a>
-              <a href={profile?.socials?.twitter || "https://x.com"} target="_blank" rel="noreferrer" className="social-btn" title="Twitter / X">
+              <a href={profile?.socials?.twitter || "https://x.com/SSDanush189491"} target="_blank" rel="noreferrer" className="social-btn" title="Twitter / X">
                 <TwitterIcon size={18} />
               </a>
               <a href={`mailto:${profile?.socials?.email || "ssdanush22@gmail.com"}`} className="social-btn" title="Email Direct">

@@ -79,7 +79,7 @@ export default function TerminalDemo({ profile, skills, projects, onOpenThemeMod
   Email:    ssdanush22@gmail.com
   GitHub:   https://github.com/ssdanush22-rgb
   LinkedIn: https://www.linkedin.com/in/s-s-danush-b2348b276/
-  Twitter:  https://x.com`
+  Twitter:  https://x.com/SSDanush189491`
         });
         break;
 
