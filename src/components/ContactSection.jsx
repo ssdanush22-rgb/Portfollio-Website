@@ -103,41 +103,54 @@ export default function ContactSection({ profile, showToast }) {
               I'm actively seeking opportunities for senior full-stack roles, contract architecture consulting, and high-impact software engineering projects.
             </p>
 
-            <div className="info-item">
-              <div className="info-icon">
-                <Mail size={20} className="accent-icon" />
+          <div className="info-item">
+            <div className="info-icon">
+              <Mail size={20} className="accent-icon" />
               </div>
+
               <div className="info-text-group">
-                <span className="info-label">Direct Email</span>
-                <span className="info-val">{profile?.socials?.email || "ssdanush22@gmail.com"}</span>
+                 <span className="info-label">Direct Email</span>
+                 <span className="info-val">
+                  {profile?.socials?.email || "ssdanush22@gmail.com"}
+                </span>
               </div>
-              <button onClick={handleCopyEmail} className="copy-btn" title="Copy Email">
+              
+              <button
+                type="button"
+                onClick={handleCopyEmail}
+                className="copy-btn"
+                title="Copy Email"
+                aria-label="Copy Email"
+              >
                 <Copy size={16} />
               </button>
             </div>
 
             <div className="info-item">
               <div className="info-icon">
-                <MessageSquare size={20} className="accent-icon" />
+                <Mail size={20} className="accent-icon" />
               </div>
+
               <div className="info-text-group">
-                <span className="info-label">Location & Status</span>
-                <span className="info-val">{profile?.location || "Chennai (Open to Remote)"}</span>
+                 <span className="info-label">Location & Status</span>
+                 <span className="info-val">
+                  {profile?.location || "Chennai (Open to Remote)"}
+                </span>
               </div>
             </div>
 
             <div className="contact-social-box">
               <span className="info-label">Social Channels:</span>
               <div className="social-links-flex">
-                <a href={profile?.socials?.github || "https://github.com"} target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                <a href={profile?.socials?.github || "https://github.com/ssdanush22-rgb"} target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                   <GithubIcon size={16} />
                   <span>GitHub</span>
                 </a>
-                <a href={profile?.socials?.linkedin || "https://linkedin.com"} target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                <a href={profile?.socials?.linkedin || "https://www.linkedin.com/in/s-s-danush-b2348b276/"} target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                   <LinkedinIcon size={16} />
                   <span>LinkedIn</span>
                 </a>
-                <a href={profile?.socials?.twitter || "https://x.com"} target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                <a href={profile?.socials?.twitter || "https://x.com/SSDanush189491"} target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                   <TwitterIcon size={16} />
                   <span>Twitter</span>
                 </a>
