@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { API_URL } from '../config';
 import { Mail, Send, CheckCircle2, AlertCircle, Copy, MessageSquare, History, User, AtSign, FileText } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, TwitterIcon } from './Icons';
 

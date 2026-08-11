@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { API_URL } from '../config';
 import { ArrowRight, Terminal, Download, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, TwitterIcon } from './Icons';
 import profilePhoto from '../assets/profile-photo.jpg';
@@ -37,7 +38,7 @@ export default function Hero({ profile, onOpenTerminal, showToast }) {
   const handleDownloadResume = (e) => {
     e.preventDefault();
     // Track resume download event
-    fetch('/api/analytics/track', {
+    fetch(`${API_URL}/api/analytics/track`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ eventType: 'resume_download' })

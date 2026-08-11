@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { API_URL } from '../config';
 import { Activity, Eye, MousePointer, Download, MessageSquare, RefreshCw } from 'lucide-react';
 
 export default function AnalyticsWidget() {
@@ -7,7 +8,7 @@ export default function AnalyticsWidget() {
 
   const fetchStats = () => {
     setLoading(true);
-    fetch('/api/analytics/stats')
+    fetch(`${API_URL}/api/analytics/stats`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
@@ -20,7 +21,7 @@ export default function AnalyticsWidget() {
 
   useEffect(() => {
     // Record page view on load
-    fetch('/api/analytics/track', {
+    fetch(`${API_URL}/api/analytics/track`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ eventType: 'page_view' })

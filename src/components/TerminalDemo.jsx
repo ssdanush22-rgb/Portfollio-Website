@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { API_URL } from '../config';
 import { Terminal as TerminalIcon, X, Play, RefreshCw, CornerDownLeft, Sparkles } from 'lucide-react';
 
 export default function TerminalDemo({ profile, skills, projects, onOpenThemeModal, showToast }) {
@@ -84,7 +85,7 @@ export default function TerminalDemo({ profile, skills, projects, onOpenThemeMod
         break;
 
       case 'stats':
-        fetch('/api/analytics/stats')
+        fetch(`${API_URL}/api/analytics/stats`)
           .then((res) => res.json())
           .then((data) => {
             if (data.success) {

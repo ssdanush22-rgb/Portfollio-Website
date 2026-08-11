@@ -10,6 +10,7 @@ import ContactSection from './components/ContactSection';
 import AnalyticsWidget from './components/AnalyticsWidget';
 import ThemeModal from './components/ThemeModal';
 import Toast from './components/Toast';
+import { API_URL } from './config';
 
 export default function App() {
   const [profile, setProfile] = useState(null);
@@ -28,22 +29,22 @@ export default function App() {
 
   // Fetch profile, skills, projects, experience from backend API
   useEffect(() => {
-    fetch('/api/profile')
+    fetch(`${API_URL}/api/profile`)
       .then((res) => res.json())
       .then((data) => data.success && setProfile(data.data))
       .catch(() => {});
 
-    fetch('/api/skills')
+    fetch(`${API_URL}/api/skills`)
       .then((res) => res.json())
       .then((data) => data.success && setSkills(data.data))
       .catch(() => {});
 
-    fetch('/api/projects')
+    fetch(`${API_URL}/api/projects`)
       .then((res) => res.json())
       .then((data) => data.success && setProjects(data.data))
       .catch(() => {});
 
-    fetch('/api/experiences')
+    fetch(`${API_URL}/api/experiences`)
       .then((res) => res.json())
       .then((data) => data.success && setExperiences(data.data))
       .catch(() => {});
