@@ -1,0 +1,431 @@
+{
+  "profile": {
+    "name": "S S Danush",
+    "title": "Senior Full-Stack & AI Engineer",
+    "bio": "Building high-performance web applications, resilient distributed systems, and intuitive AI-powered digital experiences with modern web architecture.",
+    "tagline": "Translating complex algorithms into scalable, beautifully engineered web products.",
+    "location": "San Francisco, CA (Open to Remote)",
+    "status": "Available for high-impact roles & consulting",
+    "resumeUrl": "#resume",
+    "socials": {
+      "github": "https://github.com",
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://x.com",
+      "email": "danush.dev@example.com"
+    },
+    "stats": [
+      {
+        "label": "Years Experience",
+        "value": "6+"
+      },
+      {
+        "label": "Projects Delivered",
+        "value": "32+"
+      },
+      {
+        "label": "Code Contributions",
+        "value": "4.8k+"
+      },
+      {
+        "label": "Client Satisfaction",
+        "value": "99.4%"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "id": "fe-react",
+      "name": "React.js / Next.js",
+      "category": "Frontend",
+      "level": 95,
+      "icon": "Code2",
+      "description": "Custom hooks, state management, SSR, Server Components, concurrent rendering.",
+      "tags": [
+        "Hooks",
+        "Context API",
+        "Redux Toolkit",
+        "Next.js 14",
+        "Zustand"
+      ]
+    },
+    {
+      "id": "fe-js",
+      "name": "TypeScript / ES6+",
+      "category": "Frontend",
+      "level": 92,
+      "icon": "FileCode",
+      "description": "Strict typing, generics, async workflows, module federation, DOM optimization.",
+      "tags": [
+        "Generics",
+        "Async/Await",
+        "Web Workers",
+        "DOM APIs"
+      ]
+    },
+    {
+      "id": "fe-css",
+      "name": "CSS3 / Design Systems",
+      "category": "Frontend",
+      "level": 90,
+      "icon": "Palette",
+      "description": "Vanilla CSS, CSS Modules, Tailwind, Glassmorphism, Responsive Grid, Animations.",
+      "tags": [
+        "Variables",
+        "Grid/Flex",
+        "Keyframes",
+        "Custom Properties"
+      ]
+    },
+    {
+      "id": "be-node",
+      "name": "Node.js / Express",
+      "category": "Backend",
+      "level": 94,
+      "icon": "Server",
+      "description": "RESTful APIs, middleware architecture, event loops, streaming, microservices.",
+      "tags": [
+        "Express",
+        "JWT",
+        "WebSockets",
+        "Streams",
+        "Middleware"
+      ]
+    },
+    {
+      "id": "be-db",
+      "name": "PostgreSQL & SQLite & Redis",
+      "category": "Backend",
+      "level": 88,
+      "icon": "Database",
+      "description": "Database modeling, complex SQL queries, index optimization, query caching.",
+      "tags": [
+        "SQL",
+        "Migrations",
+        "Transactions",
+        "ORMs",
+        "Redis Cache"
+      ]
+    },
+    {
+      "id": "be-python",
+      "name": "Python / FastApi",
+      "category": "Backend",
+      "level": 85,
+      "icon": "Terminal",
+      "description": "Backend services, data parsing, machine learning pipelines, asynchronous API tasks.",
+      "tags": [
+        "FastAPI",
+        "Pydantic",
+        "Asyncio",
+        "Pandas"
+      ]
+    },
+    {
+      "id": "ai-llm",
+      "name": "AI & LLM Integration",
+      "category": "AI / ML",
+      "level": 89,
+      "icon": "Cpu",
+      "description": "OpenAI API, LangChain, RAG architecture, vector search, custom AI agents.",
+      "tags": [
+        "RAG",
+        "Vector DBs",
+        "Embeddings",
+        "Prompt Engineering"
+      ]
+    },
+    {
+      "id": "cloud-ops",
+      "name": "Docker, CI/CD & Cloud",
+      "category": "DevOps & Cloud",
+      "level": 86,
+      "icon": "Cloud",
+      "description": "Containerization, GitHub Actions, AWS (S3, Lambda, EC2), Vercel, Nginx.",
+      "tags": [
+        "Docker",
+        "GitHub Actions",
+        "AWS",
+        "Nginx",
+        "Linux"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "hyper-flow",
+      "title": "HyperFlow AI Studio",
+      "category": "AI & Full-Stack",
+      "tagline": "Real-time AI workflow builder & visual prompt automation canvas.",
+      "description": "A drag-and-drop web application that empowers teams to assemble, benchmark, and deploy custom multi-model AI agent chains with real-time streaming tokens and visual node graphs.",
+      "techStack": [
+        "React 19",
+        "Express.js",
+        "WebSockets",
+        "Node.js",
+        "SQLite",
+        "OpenAI API",
+        "Tailwind/CSS"
+      ],
+      "github": "https://github.com/example/hyper-flow",
+      "demo": "https://hyperflow-demo.example.com",
+      "featured": true,
+      "imagePlaceholder": "linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%)",
+      "metrics": {
+        "users": "12,400+ Active",
+        "speed": "180ms Latency",
+        "stars": "1.2k Stars"
+      },
+      "architecture": [
+        "React frontend using custom DAG node canvas renderer for agent connections.",
+        "Express backend server handling WebSocket token streams & API key encryption.",
+        "Local SQLite database for storing execution logs, flow schemas, and prompt history."
+      ],
+      "features": [
+        "Visual Node Graph Editor with zoom & pan controls.",
+        "Real-time token streaming with syntax highlighting.",
+        "Exportable workflow JSON definitions and REST API webhooks."
+      ]
+    },
+    {
+      "id": "nexus-analytics",
+      "title": "Nexus Realtime Analytics",
+      "category": "Full-Stack Web",
+      "tagline": "High-throughput telemetry & user analytics engine for modern web apps.",
+      "description": "An end-to-end data analytics suite featuring zero-latency dashboard visualization, session recordings tracking, and automated custom metric alerts.",
+      "techStack": [
+        "React",
+        "Express.js",
+        "Chart Engine",
+        "SQLite/Postgres",
+        "Redis",
+        "CSS3 Grid"
+      ],
+      "github": "https://github.com/example/nexus-analytics",
+      "demo": "https://nexus-analytics.example.com",
+      "featured": true,
+      "imagePlaceholder": "linear-gradient(135deg, #022c22 0%, #064e3b 50%, #0f172a 100%)",
+      "metrics": {
+        "throughput": "50k req/sec",
+        "uptime": "99.99%",
+        "dataPoints": "1.5M events/day"
+      },
+      "architecture": [
+        "Micro-service telemetry collector listening to client event beacons.",
+        "Interactive dashboard utilizing CSS custom properties for dark glassmorphism design.",
+        "Aggregated time-series SQL database queries optimized with dynamic indexing."
+      ],
+      "features": [
+        "Live heatmaps and click telemetry visualization.",
+        "Custom SQL filter builder with CSV/JSON export.",
+        "Role-based workspace access controls."
+      ]
+    },
+    {
+      "id": "pulse-cloud",
+      "title": "PulseCloud Infrastructure Monitor",
+      "category": "DevOps & Cloud",
+      "tagline": "Lightweight multi-cloud resource health & synthetic performance monitor.",
+      "description": "A centralized control panel monitoring server health metrics, Docker container CPU/Memory loads, SSL certificate expirations, and latency bottlenecks.",
+      "techStack": [
+        "Node.js",
+        "React",
+        "Express",
+        "Docker",
+        "REST API",
+        "CSS Custom Props"
+      ],
+      "github": "https://github.com/example/pulse-cloud",
+      "demo": "https://pulse-cloud.example.com",
+      "featured": false,
+      "imagePlaceholder": "linear-gradient(135deg, #172554 0%, #1e40af 50%, #0f172a 100%)",
+      "metrics": {
+        "monitors": "500+ Nodes",
+        "alerting": "< 2s Telegram/Slack",
+        "memory": "15MB Footprint"
+      },
+      "architecture": [
+        "Background node daemon querying docker sockets and HTTP health endpoints.",
+        "REST API serving live metric streams to React dashboard widgets.",
+        "Alerting pipeline routing instant notifications to Webhooks."
+      ],
+      "features": [
+        "Dark mode dashboard with automated status badges.",
+        "Custom threshold alerts (Slack, Discord, Email).",
+        "Historical downtime timeline visualizer."
+      ]
+    },
+    {
+      "id": "code-craft",
+      "title": "CodeCraft Live IDE Sandbox",
+      "category": "Web Apps",
+      "tagline": "In-browser collaborative code editor & live preview environment.",
+      "description": "A lightning-fast web code editor featuring instant HTML/CSS/JS live preview, code linting, dynamic snippet library, and customizable terminal output.",
+      "techStack": [
+        "React",
+        "Express",
+        "WebAssembly",
+        "Monaco Editor",
+        "CSS Variables"
+      ],
+      "github": "https://github.com/example/code-craft",
+      "demo": "https://code-craft.example.com",
+      "featured": true,
+      "imagePlaceholder": "linear-gradient(135deg, #451a03 0%, #78350f 50%, #0f172a 100%)",
+      "metrics": {
+        "snippets": "80,000+",
+        "loadTime": "< 0.4s",
+        "users": "5.4k Devs"
+      },
+      "architecture": [
+        "Client side execution inside isolated WebWorker sandboxes.",
+        "Express backend managing snippet sharing links and user collections.",
+        "Optimized layout engine supporting tabbed splits and responsive previews."
+      ],
+      "features": [
+        "Multi-file project tabs with auto-save.",
+        "Built-in web console for JS debugging.",
+        "One-click sharing with custom URL hashing."
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp-1",
+      "role": "Lead Full-Stack Engineer",
+      "company": "Apex Tech Labs",
+      "period": "2023 - Present",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "highlights": [
+        "Architected core React/Express microservices handling over 2M daily API transactions with 99.98% reliability.",
+        "Spearheaded team adoption of modern CSS design systems, cutting UI component development time by 40%.",
+        "Integrated AI LLM copilot extensions directly into the flagship web application, boosting user retention by 28%."
+      ],
+      "skills": [
+        "React 19",
+        "Node.js/Express",
+        "PostgreSQL",
+        "Docker",
+        "System Design"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "role": "Senior Frontend & Web Developer",
+      "company": "Vanguard Software Inc",
+      "period": "2021 - 2023",
+      "location": "Austin, TX (Remote)",
+      "type": "Full-time",
+      "highlights": [
+        "Designed and implemented high-performance dashboard web apps utilizing Vite, React, and RESTful APIs.",
+        "Improved Lighthouse performance scores from 62 to 98 across 14 enterprise landing pages.",
+        "Mentored 6 junior engineers on modern JavaScript clean code practices, accessibility, and state management."
+      ],
+      "skills": [
+        "React",
+        "TypeScript",
+        "REST APIs",
+        "CSS Modules",
+        "Performance Optimization"
+      ]
+    },
+    {
+      "id": "exp-3",
+      "role": "Full-Stack Software Engineer",
+      "company": "CloudScale Systems",
+      "period": "2019 - 2021",
+      "location": "Seattle, WA",
+      "type": "Full-time",
+      "highlights": [
+        "Developed end-to-end full-stack web features using Node.js, Express, HTML5, CSS3, and JavaScript.",
+        "Created background job queues for automated report generation and email notifications.",
+        "Collaborated with UX designers to craft responsive user experiences tailored for desktop & mobile."
+      ],
+      "skills": [
+        "Node.js",
+        "JavaScript",
+        "HTML/CSS",
+        "SQLite/MySQL",
+        "Git"
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-sample-1",
+      "name": "Sarah Chen",
+      "email": "sarah.chen@techventures.io",
+      "subject": "Senior Full-Stack Role Opportunity",
+      "message": "Hi Alex! Really impressed by your HyperFlow AI project. We are looking for a Lead Full-Stack Engineer to join our team. Would love to connect!",
+      "timestamp": "2026-08-10T14:32:00.000Z"
+    }
+  ],
+  "analytics": {
+    "totalViews": 1434,
+    "projectClicks": 538,
+    "resumeDownloads": 194,
+    "messagesCount": 1,
+    "recentInteractions": [
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:55:28.395Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:55:28.228Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:49:47.573Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:49:47.570Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:48:11.370Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:48:11.350Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:47:10.447Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:47:10.404Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:43:45.014Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:43:44.979Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:38:34.371Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:38:34.189Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:28:22.403Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:28:22.196Z"
+      },
+      {
+        "type": "page_view",
+        "timestamp": "2026-08-11T04:18:45.107Z"
+      }
+    ]
+  }
+}
