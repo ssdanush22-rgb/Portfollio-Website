@@ -82,7 +82,7 @@ const initialData = {
       id: "be-python",
       name: "Python / FastApi",
       category: "Backend",
-      level: 85,
+      level: 80,
       icon: "Terminal",
       description: "Backend services, data parsing, machine learning pipelines, asynchronous API tasks.",
       tags: ["FastAPI", "Pydantic", "Asyncio", "Pandas"]
