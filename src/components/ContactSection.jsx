@@ -20,8 +20,8 @@ export default function ContactSection({ profile, showToast }) {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleCopyEmail = () => {
-    const email = profile?.socials?.email || 'ssdanush22@gmail.com';
+   const handleCopyEmail = () => {
+    const email = 'ssdanush22@gmail.com';
     navigator.clipboard.writeText(email);
     showToast('Email address copied to clipboard!', 'success');
   };
@@ -32,7 +32,7 @@ export default function ContactSection({ profile, showToast }) {
     setStatusMessage(null);
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(`${API_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -60,7 +60,7 @@ export default function ContactSection({ profile, showToast }) {
   };
 
   const fetchHistory = () => {
-    fetch('/api/contact/messages')
+    fetch(`${API_URL}/api/contact/messages`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
@@ -107,25 +107,23 @@ export default function ContactSection({ profile, showToast }) {
           <div className="info-item">
             <div className="info-icon">
               <Mail size={20} className="accent-icon" />
-              </div>
-
-              <div className="info-text-group">
-                 <span className="info-label">Direct Email</span>
-                 <span className="info-val">
-                  {profile?.socials?.email || "ssdanush22@gmail.com"}
-                </span>
-              </div>
-              
-              <button
-                type="button"
-                onClick={handleCopyEmail}
-                className="copy-btn"
-                title="Copy Email"
-                aria-label="Copy Email"
-              >
-                <Copy size={16} />
-              </button>
             </div>
+            
+            <div className="info-text-group">
+              <span className="info-label">Direct Email</span>
+              <span className="info-val">ssdanush22@gmail.com</span>
+            </div>
+
+            <button
+               type="button"
+               onClick={handleCopyEmail}
+               className="copy-btn"
+               title="Copy Email"
+               aria-label="Copy Email"
+            >
+              <Copy size={16} />
+            </button>
+          </div>
 
             <div className="info-item">
               <div className="info-icon">
