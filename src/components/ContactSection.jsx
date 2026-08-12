@@ -104,7 +104,7 @@ export default function ContactSection({ profile, showToast }) {
               I'm actively seeking opportunities for senior full-stack roles, contract architecture consulting, and high-impact software engineering projects.
             </p>
 
-          <div className="info-item">
+          {/*}<div className="info-item">
             <div className="info-icon">
               <Mail size={20} className="accent-icon" />
             </div>
@@ -112,7 +112,7 @@ export default function ContactSection({ profile, showToast }) {
             <div className="info-text-group">
               <span className="info-label">Direct Email</span>
               <span className="info-val">ssdanush22@gmail.com</span>
-            </div>
+            </div>{*/}
 
             <button
                type="button"
