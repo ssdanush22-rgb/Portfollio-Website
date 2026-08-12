@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { API_URL } from '../config';
 import { Layers, ExternalLink, Star, Search, Sparkles, Eye } from 'lucide-react';
 import { GithubIcon } from './Icons';
 import ProjectModal from './ProjectModal';
@@ -25,8 +24,6 @@ export default function ProjectsSection({ projects }) {
 
   const handleOpenProject = (project) => {
     setSelectedProject(project);
-    // Track project view click
-    fetch(`${API_URL}/api/projects/${project.id}`).catch(() => {});
   };
 
   return (

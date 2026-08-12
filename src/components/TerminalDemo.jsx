@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { API_URL } from '../config';
 import { Terminal as TerminalIcon, X, Play, RefreshCw, CornerDownLeft, Sparkles } from 'lucide-react';
 
 export default function TerminalDemo({ profile, skills, projects, onOpenThemeModal, showToast }) {
@@ -85,39 +84,11 @@ export default function TerminalDemo({ profile, skills, projects, onOpenThemeMod
         break;
 
       case 'stats':
-        fetch(`${API_URL}/api/analytics/stats`)
-          .then((res) => res.json())
-          .then((data) => {
-            if (data.success) {
-              const s = data.data;
-              setHistory((prev) => [
-                ...prev,
-                {
-                  type: 'output',
-                  text: `Live Backend Analytics:
-  Total Page Views:      ${s.totalViews}
-  Project Clicks:        ${s.projectClicks}
-  Resume Downloads:      ${s.resumeDownloads}
-  Messages Received:     ${s.messagesCount}`
-                }
-              ]);
-            }
-          })
-          .catch(() => {
-            setHistory((prev) => [
-              ...prev,
-              { type: 'error', text: 'Error connecting to analytics server endpoint.' }
-            ]);
-          });
-        break;
-
-      case 'theme':
-        onOpenThemeModal();
         newHistory.push({
           type: 'output',
-          text: 'Opened Theme Palette Picker modal.'
+          text: `Analytics tracking is unavailable in this static build.`
         });
-        break;
+      break;
 
       case 'clear':
         setHistory([]);
