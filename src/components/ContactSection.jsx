@@ -20,7 +20,7 @@ export default function ContactSection({ profile, showToast }) {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-   const handleCopyEmail = () => {
+  const handleCopyEmail = () => {
     const email = 'ssdanush22@gmail.com';
     navigator.clipboard.writeText(email);
     showToast('Email address copied to clipboard!', 'success');
@@ -44,7 +44,6 @@ export default function ContactSection({ profile, showToast }) {
         setStatusMessage({ type: 'success', text: result.message });
         setFormData({ name: '', email: '', subject: '', message: '' });
         showToast('Message delivered to backend server!', 'success');
-        // Refresh messages list if history is open
         if (showHistory) fetchHistory();
       } else {
         setStatusMessage({ type: 'error', text: result.message || 'Failed to send message.' });
@@ -80,8 +79,7 @@ export default function ContactSection({ profile, showToast }) {
   return (
     <section id="contact" className="section contact-section">
       <div className="container">
-        
-        {/* Section Header */}
+
         <div className="section-header">
           <div className="section-badge">
             <Mail size={14} />
@@ -96,43 +94,39 @@ export default function ContactSection({ profile, showToast }) {
         </div>
 
         <div className="contact-grid">
-          
-          {/* Left Column: Direct Info */}
+
           <div className="glass-card contact-info-card">
             <h3 className="card-title">Contact Details</h3>
             <p className="card-desc">
               I'm actively seeking opportunities for senior full-stack roles, contract architecture consulting, and high-impact software engineering projects.
             </p>
 
-          {/*}<div className="info-item">
-            <div className="info-icon">
-              <Mail size={20} className="accent-icon" />
+            <div className="info-item">
+              <div className="info-icon">
+                <Mail size={20} className="accent-icon" />
+              </div>
+              <div className="info-text-group">
+                <span className="info-label">Direct Email</span>
+                <span className="info-val">ssdanush22@gmail.com</span>
+              </div>
+              <button
+                type="button"
+                onClick={handleCopyEmail}
+                className="copy-btn"
+                title="Copy Email"
+                aria-label="Copy Email"
+              >
+                <Copy size={16} />
+              </button>
             </div>
-            
-            <div className="info-text-group">
-              <span className="info-label">Direct Email</span>
-              <span className="info-val">ssdanush22@gmail.com</span>
-            </div>{*/}
-
-            <button
-               type="button"
-               onClick={handleCopyEmail}
-               className="copy-btn"
-               title="Copy Email"
-               aria-label="Copy Email"
-            >
-              <Copy size={16} />
-            </button>
-          </div>
 
             <div className="info-item">
               <div className="info-icon">
                 <Mail size={20} className="accent-icon" />
               </div>
-
               <div className="info-text-group">
-                 <span className="info-label">Location & Status</span>
-                 <span className="info-val">
+                <span className="info-label">Location & Status</span>
+                <span className="info-val">
                   {profile?.location || "Chennai (Open to Remote)"}
                 </span>
               </div>
@@ -156,7 +150,6 @@ export default function ContactSection({ profile, showToast }) {
               </div>
             </div>
 
-            {/* Test Messages Trigger */}
             <div className="admin-demo-box">
               <button onClick={toggleHistory} className="btn btn-outline btn-sm">
                 <History size={16} />
@@ -166,7 +159,6 @@ export default function ContactSection({ profile, showToast }) {
 
           </div>
 
-          {/* Right Column: Contact Form */}
           <div className="glass-card contact-form-card">
             <form onSubmit={handleSubmit} className="contact-form">
               <h3 className="card-title">Send a Direct Message</h3>
@@ -266,7 +258,6 @@ export default function ContactSection({ profile, showToast }) {
 
         </div>
 
-        {/* Received Messages History Modal / Drawer */}
         {showHistory && (
           <div className="messages-history-box glass-card">
             <div className="history-header">
